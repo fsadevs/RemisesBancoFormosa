@@ -1,0 +1,9 @@
+<vector android:height="36dp" android:viewportHeight="360"
+    android:viewportWidth="180" android:width="18dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#fff" android:name="Elipse 1" android:pathData="m90 135c24.85 0 45 20.15 45 45c0 24.85 -20.15 45 -45 45c-24.85 0 -45 -20.15 -45 -45c0 -24.85 20.15 -45 45 -45z"/>
+    <path android:fillColor="#222" android:name="Elipse 2" android:pathData="m90 145c19.33 0 35 15.67 35 35c0 19.33 -15.67 35 -35 35c-19.33 0 -35 -15.67 -35 -35c0 -19.33 15.67 -35 35 -35z"/>
+    <path android:fillColor="#fff" android:name="Rectángulo 2 copia" android:pathData="m89.95 172.99 -0.48 0.1 -0.19 -0.04 -0.02 0.08 -43.28 9.11 3.06 14.76 40.61 -8.55 40.6 8.48 3.07 -14.68 -43.34 -9.06 -0.04 -0.21z"/>
+    <path android:fillColor="#fff" android:name="Rectángulo 1" android:pathData="m82 185 15 0v31h-15v-31z"/>
+    <path android:fillColor="#fff" android:name="Elipse 3" android:pathData="m90 165c8.28 0 15 6.72 15 15c0 8.28 -6.72 15 -15 15c-8.28 0 -15 -6.72 -15 -15c0 -8.28 6.72 -15 15 -15z"/>
+    <path android:fillColor="#777" android:name="Elipse 3" android:pathData="m90 166c7.73 0 14 6.27 14 14c0 7.73 -6.27 14 -14 14c-7.73 0 -14 -6.27 -14 -14c0 -7.73 6.27 -14 14 -14zm0 -1c-8.28 0 -15 6.72 -15 15c0 8.28 6.72 15 15 15c8.28 0 15 -6.72 15 -15c0 -8.28 -6.72 -15 -15 -15z"/>
+</vector>

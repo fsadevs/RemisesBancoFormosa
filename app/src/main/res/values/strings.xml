@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Remises Banco Formosa</string>
+    <string name="title_activity_customer_map">Map</string>
+    <string name="title_activity_driver_map">Map</string>
+    <string name="no_tengo_cuenta"><u>No tengo una cuenta</u></string>
+
+</resources>

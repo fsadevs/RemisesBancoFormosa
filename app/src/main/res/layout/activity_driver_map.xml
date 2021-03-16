@@ -1,0 +1,143 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driver.DriverMapActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/customer_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/barra_2">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/customer_profilepic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_profile_pic"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/txt_customer_name"
+            android:layout_width="220dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/customer_profilepic"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <TextView
+            android:id="@+id/txt_customer_location"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/customer_profilepic"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/txt_kilometraje"
+            android:layout_width="220dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/txt_customer_location"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/customer_profilepic"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_rideStatus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/animbutton_accept"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_rideCancel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/animbutton_cancel"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_driver_show_buttons"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/animbutton_showlayout" />
+
+        <RelativeLayout
+            android:id="@+id/driver_anim_buttons_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_driver_logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/animbutton_logout"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <Button
+                android:id="@+id/btn_driver_settings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn_driver_logout"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/animbutton_profile" />
+
+            <Button
+                android:id="@+id/btn_driver_history"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn_driver_settings"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/animbutton_history" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

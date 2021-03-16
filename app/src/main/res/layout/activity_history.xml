@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/history_background"
+    android:orientation="vertical"
+    tools:context="com.fsadevs.remisesbancoformosa.HistoryActivity">
+
+    <TextView
+        android:id="@+id/txt_history_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Historial"
+        android:textAlignment="gravity"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_history_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/btn_history_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/animbutton_default"
+        android:text="VOLVER"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

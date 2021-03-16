@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RidePlannerActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rideplanner_driver_profileimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/default_profile_pic"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:id="@+id/txt_rideplanner_driverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/rideplanner_driver_profileimage"
+        android:text="Nombre"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_rideplanner_driverProv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_rideplanner_driverName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/rideplanner_driver_profileimage"
+        android:text="Proveedor"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtbx_timeselect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView9"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/btn_timepicker"
+        android:layout_toEndOf="@+id/textView8"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtbx_startloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtbx_timeselect"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:ems="10"
+        android:hint="Origen"
+        android:inputType="none|textMultiLine|text"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtbx_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtbx_startloc"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:ems="10"
+        android:hint="Destino"
+        android:inputType="none|textMultiLine|text"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_timepicker"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/animbutton_clock" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Hora"
+        android:textAlignment="textStart"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Origen"
+        android:textAlignment="viewStart"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtbx_startloc"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Destino"
+        android:textAlignment="viewStart"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rideplanner_driver_profileimage"
+        android:layout_marginTop="10dp"
+        android:text="Datos de la solicitud"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+</RelativeLayout>

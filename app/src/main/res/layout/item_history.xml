@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/history_itemcard"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/history_timestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:text="Tiempo"
+        android:textAlignment="textEnd"
+        android:textColor="@color/quantum_cyan900"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/history_driver_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_timestart"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="15dp"
+        android:text="Conductor"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/history_start_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_driver_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="15dp"
+        android:text="Origen"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/history_destino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_start_location"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="15dp"
+        android:text="Destino"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/history_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_destino"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Distancia"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/icon_person"
+        android:layout_width="15dp"
+        android:layout_height="19dp"
+        android:layout_below="@+id/history_timestart"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_profile" />
+
+    <ImageView
+        android:id="@+id/icon_person2"
+        android:layout_width="15dp"
+        android:layout_height="19dp"
+        android:layout_below="@id/history_driver_name"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_placeholder" />
+
+    <ImageView
+        android:id="@+id/icon_person3"
+        android:layout_width="15dp"
+        android:layout_height="19dp"
+        android:layout_below="@id/history_start_location"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_destino" />
+
+    <ImageView
+        android:id="@+id/icon_person4"
+        android:layout_width="15dp"
+        android:layout_height="19dp"
+        android:layout_below="@id/history_destino"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_distancia" />
+
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/driver_settings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Driver.DriverProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/default_profile_pic"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="3dp" />
+
+    <View
+        android:id="@+id/fakeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <EditText
+        android:id="@+id/tbx_driver_dominio"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tbx_driver_nombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Dominio del vehículo"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <EditText
+        android:id="@+id/tbx_driver_nombre"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tbx_driver_proveedor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <EditText
+        android:id="@+id/tbx_driver_proveedor"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tbx_driver_celular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Proveedor"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <EditText
+        android:id="@+id/tbx_driver_celular"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn_driver_settings_ok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Número de teléfono"
+        android:inputType="phone"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/btn_driver_settings_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@id/fakeView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/animbutton_default"
+        android:text="Aceptar"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/btn_driver_settings_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/fakeView"
+        android:background="@drawable/animbutton_default"
+        android:text="Cancelar"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <ImageView
+        android:id="@+id/ic_name"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/tbx_driver_nombre"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/tbx_driver_nombre"
+        app:srcCompat="@drawable/ic_name" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/tbx_driver_dominio"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/tbx_driver_dominio"
+        app:srcCompat="@drawable/ic_dominio" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/tbx_driver_proveedor"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/tbx_driver_proveedor"
+        app:srcCompat="@drawable/ic_proveedor" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/tbx_driver_celular"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/tbx_driver_celular"
+        app:srcCompat="@drawable/ic_celphone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbx_driver_dominio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Perfil del conductor"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+</RelativeLayout>

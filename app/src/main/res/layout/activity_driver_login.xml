@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Driver.DriverLoginActivity">
+
+
+    <EditText
+        android:id="@+id/tbx_driver_email"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tbx_driver_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="su_email@ejemplo.com"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/tbx_driver_password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn_driver_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="******"
+        android:inputType="textPassword"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_driver_login"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/txt_driver_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/animbutton_default"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txt_driver_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbx_driver_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Inicio de sesión de conductor"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_driver_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="128dp"
+        app:srcCompat="@drawable/logo1" />
+
+    <ImageView
+        android:id="@+id/img_driver_pass"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/tbx_driver_password"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/tbx_driver_password"
+        app:srcCompat="@drawable/ic_padlock" />
+
+    <ImageView
+        android:id="@+id/img_driver_email"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/tbx_driver_email"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/tbx_driver_email"
+        app:srcCompat="@drawable/ic_email" />
+
+    <TextView
+        android:id="@+id/txt_driver_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/no_tengo_cuenta"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+</RelativeLayout>

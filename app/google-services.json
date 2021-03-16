@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1023151890526",
+    "firebase_url": "https://remisesbancoformosa-f6077.firebaseio.com",
+    "project_id": "remisesbancoformosa-f6077",
+    "storage_bucket": "remisesbancoformosa-f6077.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023151890526:android:85ee9f3b181c9e46",
+        "android_client_info": {
+          "package_name": "com.fsadevs.remisesbancoformosa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023151890526-mce8ejspp37fgbvavoig5o1d6hcqfoja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fsadevs.remisesbancoformosa",
+            "certificate_hash": "343044e0195f3823f0694e84c5965d4adea7ec65"
+          }
+        },
+        {
+          "client_id": "1023151890526-gf0m26qpi3ehue1hab2csk1sphquq18d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXN5e6WVmRYw58oHecFH34uhwY9Z8ddy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023151890526-gf0m26qpi3ehue1hab2csk1sphquq18d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
